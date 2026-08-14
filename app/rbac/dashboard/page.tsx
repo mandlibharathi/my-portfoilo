@@ -98,7 +98,9 @@ export default async function DashboardPage() {
         <DashboardHeader
           name={session.user.name}
           email={session.user.email} 
-          role={role}        />
+role={role}  
+
+               />
 
         {/* ================= CONTENT ================= */}
 
@@ -113,7 +115,6 @@ export default async function DashboardPage() {
           <Box sx={{ mb: 5 }}>
             <Typography
               variant="h4"
-              fontWeight={700}
             >
               Welcome, {session.user.name}
             </Typography>
@@ -141,7 +142,6 @@ export default async function DashboardPage() {
             <CardContent>
               <Typography
                 variant="h6"
-                fontWeight={600}
                 gutterBottom
               >
                 Account Information
@@ -188,7 +188,6 @@ export default async function DashboardPage() {
 
           <Typography
             variant="h5"
-            fontWeight={600}
             sx={{ mb: 3 }}
           >
             Available Modules
@@ -230,7 +229,6 @@ export default async function DashboardPage() {
 
                     <Typography
                       variant="h6"
-                      fontWeight={600}
                     >
                       Articles
                     </Typography>
@@ -295,7 +293,6 @@ export default async function DashboardPage() {
 
                     <Typography
                       variant="h6"
-                      fontWeight={600}
                     >
                       Users
                     </Typography>
@@ -353,7 +350,6 @@ export default async function DashboardPage() {
 
                     <Typography
                       variant="h6"
-                      fontWeight={600}
                     >
                       Roles & Permissions
                     </Typography>

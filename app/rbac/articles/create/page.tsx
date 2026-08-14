@@ -103,8 +103,7 @@ export default async function CreateArticlePage() {
 
           <Box>
             <Typography
-              variant="h4"
-              fontWeight={700}
+            
             >
               Create Article
             </Typography>

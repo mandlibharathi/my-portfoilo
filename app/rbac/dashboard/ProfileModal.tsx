@@ -281,7 +281,6 @@ export default function ProfileModal({
 
         <Typography
           variant="h6"
-          fontWeight={700}
           sx={{
             flex: 1,
           }}
@@ -370,7 +369,6 @@ export default function ProfileModal({
 
               <Typography
                 variant="h6"
-                fontWeight={600}
               >
                 {profileName ||
                   "Not available"}
@@ -389,7 +387,6 @@ export default function ProfileModal({
 
               <Typography
                 variant="h6"
-                fontWeight={600}
               >
                 {profileEmail ||
                   "Not available"}

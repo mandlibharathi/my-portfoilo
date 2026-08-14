@@ -365,18 +365,7 @@ export default function RegisterPage() {
                     )
                   }
                   required
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <Person2Outlined
-                          sx={{
-                            color:
-                              "text.secondary",
-                          }}
-                        />
-                      </InputAdornment>
-                    ),
-                  }}
+                  
                 />
 
                 {/* Email */}
@@ -393,18 +382,7 @@ export default function RegisterPage() {
                     )
                   }
                   required
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <EmailOutlinedIcon
-                          sx={{
-                            color:
-                              "text.secondary",
-                          }}
-                        />
-                      </InputAdornment>
-                    ),
-                  }}
+                 
                 />
 
                 {/* Password */}
@@ -421,21 +399,8 @@ export default function RegisterPage() {
                     )
                   }
                   required
-                  inputProps={{
-                    minLength: 8,
-                  }}
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <LockOutlinedIcon
-                          sx={{
-                            color:
-                              "text.secondary",
-                          }}
-                        />
-                      </InputAdornment>
-                    ),
-                  }}
+                
+                 
                 />
 
                 {/* Password information */}
@@ -533,8 +498,6 @@ export default function RegisterPage() {
             {/* Login */}
 
             <Typography
-              textAlign="center"
-              fontSize={14}
               color="text.secondary"
             >
               Already have an account?{" "}

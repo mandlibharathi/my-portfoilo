@@ -72,8 +72,7 @@ export default async function AdminRolesPage() {
           <SecurityIcon sx={{ fontSize: 30 }} />
 
           <Typography
-            variant="h6"
-            fontWeight={700}
+           
           >
             RBAC Admin
           </Typography>
@@ -308,8 +307,7 @@ export default async function AdminRolesPage() {
 
           <Box>
             <Typography
-              variant="h4"
-              fontWeight={700}
+              
             >
               Roles & Permissions
             </Typography>

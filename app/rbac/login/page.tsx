@@ -119,7 +119,6 @@ export default function LoginPage() {
           {/* Logo */}
           <Typography
             variant="h5"
-            fontWeight={800}
             sx={{
               position: "relative",
               zIndex: 2,
@@ -179,7 +178,7 @@ export default function LoginPage() {
               and permissions — all in one place.
             </Typography>
 
-            <Stack spacing={2} mt={4}>
+            <Stack >
               {[
                 "Role-based access control",
                 "Secure user management",
@@ -187,8 +186,6 @@ export default function LoginPage() {
               ].map((item) => (
                 <Stack
                   direction="row"
-                  spacing={1.5}
-                  alignItems="center"
                   key={item}
                 >
                   {/* <CheckCircleOutlineIcon
@@ -258,8 +255,6 @@ export default function LoginPage() {
             {isMobile && (
               <Typography
                 variant="h5"
-                fontWeight={800}
-                mb={6}
                 color="text.primary"
               >
                 RBAC
@@ -274,7 +269,6 @@ export default function LoginPage() {
 
             <Typography
               variant="h3"
-              fontWeight={750}
               sx={{
                 fontSize: {
                   xs: 32,
@@ -314,17 +308,7 @@ export default function LoginPage() {
                     setEmail(event.target.value)
                   }
                   required
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <EmailOutlinedIcon
-                          sx={{
-                            color: "text.secondary",
-                          }}
-                        />
-                      </InputAdornment>
-                    ),
-                  }}
+                
                 />
 
                 {/* Password */}
@@ -338,7 +322,6 @@ export default function LoginPage() {
                   >
                     <Typography
                       variant="body2"
-                      fontWeight={600}
                     >
                       Password
                     </Typography>
@@ -364,17 +347,7 @@ export default function LoginPage() {
                       setPassword(event.target.value)
                     }
                     required
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start">
-                          <LockOutlinedIcon
-                            sx={{
-                              color: "text.secondary",
-                            }}
-                          />
-                        </InputAdornment>
-                      ),
-                    }}
+                  
                   />
                 </Box>
 
@@ -443,8 +416,6 @@ export default function LoginPage() {
 
             {/* Register */}
             <Typography
-              textAlign="center"
-              fontSize={14}
               color="text.secondary"
             >
               Don't have an account?{" "}

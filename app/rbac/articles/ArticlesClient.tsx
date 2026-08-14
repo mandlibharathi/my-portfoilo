@@ -451,8 +451,7 @@ export default function ArticlesClient({
               {/* TITLE */}
 
               <Typography
-                variant="h4"
-                fontWeight={700}
+               
               >
                 Articles
               </Typography>
@@ -591,7 +590,6 @@ export default function ArticlesClient({
 
                     <TableCell>
                       <Typography
-                        fontWeight={600}
                       >
                         {article.title}
                       </Typography>
@@ -770,9 +768,7 @@ export default function ArticlesClient({
           <ArticleIcon color="primary" />
 
           <Typography
-            variant="h6"
-            fontWeight={700}
-            sx={{ flex: 1 }}
+           
           >
             Article Details
           </Typography>
@@ -790,8 +786,7 @@ export default function ArticlesClient({
           {selectedArticle && (
             <Box>
               <Typography
-                variant="h4"
-                fontWeight={700}
+
                 sx={{
                   mb: 2,
                   wordBreak:
@@ -839,7 +834,7 @@ export default function ArticlesClient({
                   Author
                 </Typography>
 
-                <Typography fontWeight={600}>
+                <Typography >
                   {typeof selectedArticle.author ===
                   "object"
                     ? selectedArticle.author
@@ -877,8 +872,6 @@ export default function ArticlesClient({
                   }}
                 >
                   <Typography
-                    color="text.secondary"
-                    fontStyle="italic"
                   >
                     {
                       selectedArticle.excerpt
@@ -890,8 +883,6 @@ export default function ArticlesClient({
               {/* CONTENT */}
 
               <Typography
-                variant="h6"
-                fontWeight={600}
                 sx={{ mb: 2 }}
               >
                 Content
@@ -928,8 +919,7 @@ export default function ArticlesClient({
                   </Typography>
 
                   <Typography
-                    variant="body2"
-                    fontWeight={600}
+                    
                   >
                     {new Date(
                       selectedArticle.createdAt
@@ -948,8 +938,7 @@ export default function ArticlesClient({
                   </Typography>
 
                   <Typography
-                    variant="body2"
-                    fontWeight={600}
+                  
                   >
                     {new Date(
                       selectedArticle.updatedAt
@@ -998,8 +987,7 @@ export default function ArticlesClient({
           <EditIcon color="primary" />
 
           <Typography
-            variant="h6"
-            fontWeight={700}
+          
             sx={{ flex: 1 }}
           >
             Edit Article
@@ -1042,9 +1030,7 @@ export default function ArticlesClient({
               }
               required
               fullWidth
-              inputProps={{
-                maxLength: 200,
-              }}
+             
               helperText={`${editTitle.length}/200`}
             />
 
@@ -1076,9 +1062,7 @@ export default function ArticlesClient({
               fullWidth
               multiline
               rows={3}
-              inputProps={{
-                maxLength: 500,
-              }}
+             
               helperText={`${editExcerpt.length}/500`}
             />
 

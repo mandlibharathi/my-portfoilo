@@ -321,8 +321,7 @@ export default function AuditLogsClient() {
                 />
 
                 <Typography
-                  variant="h4"
-                  fontWeight={700}
+                 
                 >
                   Audit Logs
                 </Typography>
@@ -390,9 +389,7 @@ export default function AuditLogsClient() {
               </Typography>
 
               <Typography
-                variant="h4"
-                fontWeight={700}
-                sx={{ mt: 1 }}
+               
               >
                 {logs.length}
               </Typography>
@@ -408,10 +405,7 @@ export default function AuditLogsClient() {
               </Typography>
 
               <Typography
-                variant="h4"
-                fontWeight={700}
-                color="success.main"
-                sx={{ mt: 1 }}
+                
               >
                 {
                   logs.filter(
@@ -433,10 +427,7 @@ export default function AuditLogsClient() {
               </Typography>
 
               <Typography
-                variant="h4"
-                fontWeight={700}
-                color="error.main"
-                sx={{ mt: 1 }}
+               
               >
                 {
                   logs.filter(
@@ -657,7 +648,6 @@ export default function AuditLogsClient() {
                     >
                       <TableCell>
                         <Typography
-                          fontWeight={600}
                         >
                           {log.user
                             ?.name ||
@@ -694,7 +684,6 @@ export default function AuditLogsClient() {
 
                       <TableCell>
                         <Typography
-                          fontWeight={500}
                         >
                           {
                             log.resource
@@ -974,12 +963,7 @@ function DetailRow({
       </Typography>
 
       <Typography
-        fontWeight={500}
-        sx={{
-          mt: 0.5,
-          wordBreak:
-            "break-word",
-        }}
+       
       >
         {value}
       </Typography>

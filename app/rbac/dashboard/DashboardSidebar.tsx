@@ -106,7 +106,6 @@ export default function DashboardSidebar({
 
         <Typography
           variant="h6"
-          fontWeight={700}
         >
           RBAC Admin
         </Typography>
@@ -180,12 +179,7 @@ export default function DashboardSidebar({
 
                 <ListItemText
                   primary={item.name}
-                  primaryTypographyProps={{
-                    fontSize: 14,
-                    fontWeight: active
-                      ? 600
-                      : 500,
-                  }}
+                 
                 />
               </ListItemButton>
             );

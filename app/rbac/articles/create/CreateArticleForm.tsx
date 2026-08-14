@@ -240,9 +240,7 @@ export default function CreateArticleForm({
           }}
           required
           fullWidth
-          inputProps={{
-            maxLength: 200,
-          }}
+         
           placeholder="Enter article title"
           helperText={`${title.length}/200`}
         />
@@ -276,9 +274,7 @@ export default function CreateArticleForm({
           fullWidth
           multiline
           rows={3}
-          inputProps={{
-            maxLength: 500,
-          }}
+          
           placeholder="Write a short description of the article..."
           helperText={`${excerpt.length}/500`}
         />

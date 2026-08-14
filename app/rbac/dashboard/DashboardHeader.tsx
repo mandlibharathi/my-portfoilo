@@ -29,7 +29,7 @@ import ProfileModal from "./ProfileModal";
 type Props = {
   name?: string | null;
   email?: string | null;
-  role: "admin" | "manager" | "user";
+  role: "admin" | "manager" | "user" |string |any;
 };
 
 export default function DashboardHeader({
@@ -160,7 +160,6 @@ const displayEmail =
 
             <Typography
               variant="h6"
-              fontWeight={700}
               component={Link}
               href="/rbac/dashboard"
               sx={{
@@ -223,7 +222,6 @@ const displayEmail =
             >
               <Typography
                 variant="body2"
-                fontWeight={600}
               >
                 {displayName}
               </Typography>
