@@ -77,7 +77,7 @@ export default async function DashboardPage() {
 
       <DashboardSidebar
         currentPath="/rbac/dashboard"
-  role={role}
+  role={session.user.role}
   canReadArticles={canReadArticles}
   canReadUsers={canReadUsers}
   canReadRoles={canReadRoles}
