@@ -69,16 +69,21 @@ export async function POST() {
     ];
 
     for (const roleData of defaultRoles) {
-      await Role.findOneAndUpdate(
-        { name: roleData.name },
-        roleData,
-        {
-          upsert: true,
-          new: true,
-          setDefaultsOnInsert: true,
-        }
-      );
+  await Role.findOneAndUpdate(
+   
+    {
+      $set: {
+        description: roleData.description,
+        permissions: roleData.permissions,
+      },
+    },
+    {
+      upsert: true,
+      new: true,
+      setDefaultsOnInsert: true,
     }
+  );
+}
 
     return NextResponse.json({
       success: true,
