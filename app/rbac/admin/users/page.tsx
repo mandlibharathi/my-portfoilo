@@ -241,8 +241,6 @@ export default function AdminUsersPage() {
         }}
       >
         <Stack
-          spacing={2}
-          alignItems="center"
         >
           <CircularProgress />
 
@@ -293,8 +291,7 @@ export default function AdminUsersPage() {
           <Box>
             <Stack
               direction="row"
-              spacing={1.5}
-              alignItems="center"
+             
             >
               <PeopleIcon
                 color="primary"
@@ -305,7 +302,6 @@ export default function AdminUsersPage() {
 
               <Typography
                 variant="h4"
-                fontWeight={700}
               >
                 Manage Users
               </Typography>
@@ -380,7 +376,6 @@ export default function AdminUsersPage() {
 
             <Typography
               variant="h4"
-              fontWeight={700}
               sx={{ mt: 1 }}
             >
               {users.length}
@@ -405,7 +400,6 @@ export default function AdminUsersPage() {
 
             <Typography
               variant="h4"
-              fontWeight={700}
               sx={{ mt: 1 }}
             >
               {
@@ -435,7 +429,6 @@ export default function AdminUsersPage() {
 
             <Typography
               variant="h4"
-              fontWeight={700}
               sx={{ mt: 1 }}
             >
               {roles.length}
@@ -474,7 +467,6 @@ export default function AdminUsersPage() {
 
             <Typography
               variant="h6"
-              fontWeight={600}
             >
               Users & Roles
             </Typography>
@@ -543,7 +535,6 @@ export default function AdminUsersPage() {
 
                         <TableCell>
                           <Typography
-                            fontWeight={600}
                           >
                             {
                               user.name

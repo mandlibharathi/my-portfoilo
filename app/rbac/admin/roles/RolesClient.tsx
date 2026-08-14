@@ -296,7 +296,6 @@ export default function RolesClient() {
         <Box sx={{ flex: 1 }}>
           <Typography
             variant="h6"
-            fontWeight={700}
           >
             Permission Management
           </Typography>
@@ -347,7 +346,6 @@ export default function RolesClient() {
         <Box sx={{ p: 5, textAlign: "center" }}>
           <Typography
             variant="h6"
-            fontWeight={600}
           >
             No roles found
           </Typography>
@@ -384,7 +382,6 @@ export default function RolesClient() {
                 }}
               >
                 <Typography
-                  fontWeight={700}
                   sx={{
                     textTransform:
                       "capitalize",
@@ -501,7 +498,6 @@ export default function RolesClient() {
                     >
                       <TableCell>
                         <Typography
-                          fontWeight={600}
                         >
                           {permission.key}
                         </Typography>
