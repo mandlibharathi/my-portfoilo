@@ -52,7 +52,7 @@ export async function hasPermission(
   try {
     await connectDB();
 
-    const role = await Role.findOne().lean();
+    const role = await Role.findOne({roleName}).lean();
 
     if (!role) {
       return false;

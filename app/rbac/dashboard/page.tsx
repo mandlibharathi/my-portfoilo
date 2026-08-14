@@ -98,7 +98,7 @@ export default async function DashboardPage() {
         <DashboardHeader
           name={session.user.name}
           email={session.user.email} 
-role={role}  
+           role={session.user.role}
 
                />
 

@@ -25,11 +25,12 @@ import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 
 import ProfileModal from "./ProfileModal";
+import { RoleName } from "@/app/lib/models/Role";
 
 type Props = {
   name?: string | null;
   email?: string | null;
-  role: "admin" | "manager" | "user" |string |any;
+  role: RoleName ;
 };
 
 export default function DashboardHeader({
