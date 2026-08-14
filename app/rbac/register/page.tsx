@@ -147,13 +147,7 @@ export default function RegisterPage() {
           {/* Logo */}
 
           <Typography
-            variant="h5"
-            fontWeight={800}
-            sx={{
-              position: "relative",
-              zIndex: 2,
-              letterSpacing: "-1px",
-            }}
+            
           >
             RBAC
             <Box
@@ -222,8 +216,7 @@ export default function RegisterPage() {
             </Typography>
 
             <Stack
-              spacing={2}
-              mt={4}
+             
             >
               {[
                 "Easy user management",
@@ -231,10 +224,7 @@ export default function RegisterPage() {
                 "Secure permissions",
               ].map((item) => (
                 <Stack
-                  direction="row"
-                  spacing={1.5}
-                  alignItems="center"
-                  key={item}
+                 
                 >
                   <CheckCircleOutlineOutlined
                     sx={{
@@ -316,10 +306,7 @@ export default function RegisterPage() {
 
             {isMobile && (
               <Typography
-                variant="h5"
-                fontWeight={800}
-                mb={6}
-                color="text.primary"
+               
               >
                 RBAC
                 <Box
@@ -337,19 +324,7 @@ export default function RegisterPage() {
             {/* Heading */}
 
             <Typography
-              variant="h3"
-              fontWeight={750}
-              sx={{
-                fontSize: {
-                  xs: 32,
-                  sm: 38,
-                },
-
-                letterSpacing:
-                  "-1.5px",
-
-                color: "#111827",
-              }}
+             
             >
               Create your account
             </Typography>
