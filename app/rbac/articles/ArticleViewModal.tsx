@@ -118,7 +118,6 @@ export default function ArticleViewModal({
 
         <Typography
           variant="h6"
-          fontWeight={700}
           sx={{ flex: 1 }}
         >
           Article Details
@@ -176,7 +175,6 @@ export default function ArticleViewModal({
 
               <Typography
                 variant="h4"
-                fontWeight={700}
                 sx={{
                   mb: 2,
                   wordBreak: "break-word",
@@ -225,7 +223,6 @@ export default function ArticleViewModal({
                   </Typography>
 
                   <Typography
-                    fontWeight={600}
                   >
                     {article.author.name ||
                       "Unknown"}
@@ -259,7 +256,6 @@ export default function ArticleViewModal({
                 >
                   <Typography
                     color="text.secondary"
-                    fontStyle="italic"
                   >
                     {article.excerpt}
                   </Typography>
@@ -272,7 +268,6 @@ export default function ArticleViewModal({
 
               <Typography
                 variant="h6"
-                fontWeight={600}
                 sx={{ mb: 2 }}
               >
                 Content
@@ -309,7 +304,6 @@ export default function ArticleViewModal({
 
                     <Typography
                       variant="body2"
-                      fontWeight={600}
                     >
                       {new Date(
                         article.createdAt
@@ -329,7 +323,6 @@ export default function ArticleViewModal({
 
                     <Typography
                       variant="body2"
-                      fontWeight={600}
                     >
                       {new Date(
                         article.updatedAt
