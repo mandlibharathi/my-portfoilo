@@ -1,6 +1,7 @@
-import mongoose, {
+import {
   Schema,
-  type Model,
+  models,
+  model,
 } from "mongoose";
 
 export type RoleName =
@@ -20,21 +21,13 @@ const RoleSchema = new Schema<IRole>(
   {
     name: {
       type: String,
-      enum: [
-        "admin",
-        "manager",
-        "user",
-      ],
+      enum: ["admin", "manager", "user"],
       required: true,
       unique: true,
-      lowercase: true,
-      trim: true,
     },
 
     description: {
       type: String,
-      trim: true,
-      maxlength: 500,
       default: "",
     },
 
@@ -48,9 +41,6 @@ const RoleSchema = new Schema<IRole>(
   }
 );
 
-export const Role: Model<IRole> =
-  mongoose.models.Role ||
-  mongoose.model<IRole>(
-    "Role",
-    RoleSchema
-  );
+export const Role =
+  models.Role ||
+  model<IRole>("Role", RoleSchema);

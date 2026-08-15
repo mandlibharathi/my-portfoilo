@@ -53,7 +53,7 @@ export default async function DashboardPage() {
     "users.read"
   );
 
-  console.log({
+ console.log({
   email: session.user.email,
   role: session.user.role,
   canReadArticles,
